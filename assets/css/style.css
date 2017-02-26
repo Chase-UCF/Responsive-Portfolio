@@ -6,10 +6,9 @@ body {
   background: url("../images/concrete_seamless.png");
 }
 
-/** {
-  box-shadow: 1px 1px 1px 1px red;
+* {
   box-sizing: border-box;
-}*/
+}
 
 
 /*general*/
@@ -69,7 +68,7 @@ h3 {
 #logo {
   width: 250px;
   height: 90px;
-  /*float: left;*/
+  float: left;
   font-family: 'Georgia', Times, Times New Roman, serif;
   text-align: center;
   line-height: 90px;
@@ -78,18 +77,16 @@ h3 {
   font-size: 30px;
   text-decoration: none;
   background: #4aaaa5;
-  clear: both;
 }
 
 nav {
-  clear: both;
-  /*float: right;*/
+  float: right;
   margin-top: 25px;
 }
 
 nav a {
   display: inline-block;
-  margin: 0 15px 0 15px;
+  margin-left: 15px;
   padding-left: 15px;
   color: #999;
   text-decoration: none;
@@ -98,7 +95,7 @@ nav a {
 }
 
 nav a:first-child {
-  /*border-left: 0 none;*/
+  border-left: 0 none;
 }
 
 
@@ -267,7 +264,6 @@ input[type=submit] {
 
 
 
-
 @media only screen and (max-width: 640px) {
 
   .container {
@@ -308,20 +304,16 @@ h1{
 
 nav {
   clear: both;
-  /*float: left;*/
+  /*float: none;*/
   width: 640px;
-  /*margin-top: 25px;*/
+  margin-top: 0;
 }
 
 nav a {
   clear: both;
-  /*display: inline-block;*/
+  display: inline-block;
   margin: 0 0 0 15px;
-  /*padding-left: 15px;*/
-  color: #999;
-  text-decoration: none;
-  line-height: 18px;
-  border-left: 1px solid #efefef;
+  padding: 10px 55px;
 }
 
 #main-container{
@@ -355,13 +347,30 @@ nav a {
 }
 
   .sidebar {
+  /*clear: both;*/
   padding: 30px;
-  width: 100%;
+  /*width: 100%;*/
   max-width: 540px;
   float: none;
-  margin: 30px 30px 20px 30px;
+  margin: 80px 30px 20px 30px;
   background: #fff;
   border: 1px solid #ddd;
+}         
+
+}
+
+
+@media only screen and (max-width: 768px){
+      
+      .sidebar {
+          /*clear: both;*/
+          padding: 30px;
+          /*width: 100%;*/
+          max-width: 100%;
+          float: right;
+          margin: 50px 30px 20px 30px;
+          background: #fff;
+          border: 1px solid #ddd;
 }         
 
 }
